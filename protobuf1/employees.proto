@@ -1,0 +1,12 @@
+syntax = "proto3";  //starts with syntax
+
+
+message Employee{//most of the stuff in protobf is labeled message
+    int32 id = 1;
+    string name = 2;
+    float salary = 3; //numbers are the order in which they are placed
+}
+
+message Employees{
+    repeated Employee employees = 1;
+}
