@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+enum Eyecolor {
+    EYE_COLOR_UNSPECIFIED = 0;
+    Green = 1;
+    Blue = 2;
+    Grey = 3;
+    Brown =4;
+}
+
+message Account {
+    uint32 id = 1;
+    string name = 2;
+    bytes thumbnail = 3;
+    bool isVerified = 4;
+    float height = 5;
+
+    repeated string phones = 6;
+
+    Eyecolor eye_color = 7;
+    
+    // now, this is a comment
+
+    /*  Now,
+        This is a
+        multiline comment.
+    */
+
+}

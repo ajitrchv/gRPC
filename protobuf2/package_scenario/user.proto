@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+import "package.proto";
+
+message userMessage{
+   Months month = 1; 
+   my.package.anniversary our_day = 2;
+}
